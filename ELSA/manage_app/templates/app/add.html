@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ELSA(即時動態捕捉)<</title> 
+</head>
+<body>
+    <h1>上傳檔案</h1>
+    <form action="/manage_app/add/" enctype="multipart/form-data" method="post">{% csrf_token %} 
+        <label for="user_name">mail:</label>
+        <input type="text" name="user_name"><br><br>
+        <!-- <label for="user_image">大頭貼:</label><br>
+        <input type="file" name="user_image"><br><br> -->
+        <label for="user_mp4">請上傳mp4檔:</label><br>
+        <input type="file" name="user_mp4"><br><br>
+        <input type="submit" value="提交">
+        <h2>{{response}}</h2>
+    </form>
+</body>
+</html>
