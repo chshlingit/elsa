@@ -7,7 +7,7 @@ class User(models.Model):
 
     #user_image = models.ImageField(upload_to='image/') #ImageField 代表圖片的的一個屬性
     
-    user_mp4 = models.FileField(upload_to='user_mp4') #introduce 是一個檔案，在資料庫中會記錄他的路徑
+    user_mp4 = models.FileField(upload_to='user_mp4/') #introduce 是一個檔案，在資料庫中會記錄他的路徑
     
     def __str__(self):
         return self.user_name
