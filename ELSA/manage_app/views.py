@@ -11,7 +11,7 @@ def add(request):
         user_name = request.POST.get('user_name')  # 對應剛剛add.html 中的input name
         # user_img = request.FILES.get('user_image')
         user_mp4 = request.FILES.get('user_mp4')
-        user = User(user_name=user_name,  user_mp4=user_mp4)
+        user = User(user_mp4=user_mp4)
         user.save()
         response="Here's the text of the Web"
         try:
