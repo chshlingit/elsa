@@ -30,7 +30,7 @@ from . import view
 
 
 urlpatterns = [
-    #url(r'^$', view.hello),
+    url(r'^$', view.add),
     path('hello/', view.hello),
     path('admin/', admin.site.urls),
     path('manage_app/', include('manage_app.urls')),# 新增的，把路由做導向

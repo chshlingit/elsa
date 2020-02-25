@@ -23,7 +23,7 @@ def add(request):
             #processing done
         except StopIteration:
             print("No file was updated!")
-        return render(request, 'app/feback.html', locals())
+        return render(request, 'app/feedback.html', locals())
 
     # =====新增的程式碼=====#
     return render(request, 'app/add.html', locals())
@@ -36,8 +36,8 @@ def detail(request):
     # check_box_list = request.REQUEST.getlist("check_box_list")
     
 
-def feback(request):
-    return render(request, 'app/feback.html', locals())
+def feedback(request):
+    return render(request, 'app/feedback.html', locals())
     #response.delete_cookie("cookie_key",path="/add",domain=name)
     send_email.delay(user_name[-1], 'user') #收件人
 	
