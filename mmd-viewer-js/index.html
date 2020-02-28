@@ -1,7 +1,23 @@
 <html>
 <head>
 <meta carset="utf-8">
-<title>MMD</title>
+
+<!-- Required meta tags -->  
+<meta carset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- <link href="../ELSA/static/signin.css" rel="stylesheet"> -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<title>A.I.</title>
 <script type="text/javascript" src="lib/glMatrix-0.9.5.min.js"></script>
 <script type="text/javascript" src="lib/ammo.js"></script>
 <script type="text/javascript" src="lib/whammy.js"></script>
@@ -831,24 +847,25 @@ var __mouseMoveHandler = function(e) {
 
 </script>
 </head>
-<body onload="__init()">
-
+<body onload="__init()" class="text-center">
 
 <p>
-<select id="modelSelect"></select>
-<button id="loadModelButton" onclick="__loadModelButtonClicked()">
-load model
-</button>
 <br />
-
-<button id="loadMotionButton" onclick="__loadMotionButtonClicked()">
-load motion
+選取角色模型
+<select class="form-control-sm" id="modelSelect"></select>
+<br />
+<button class="btn btn-primary" style="margin-top:20px" id="loadModelButton" onclick="__loadModelButtonClicked()">
+載入角色模型
 </button>
+<!-- <br /> -->
 
+<button class="btn btn-primary" style="margin-top:20px" id="loadMotionButton" onclick="__loadMotionButtonClicked()">
+載入動作資訊
+</button>
 </p>
 
 <canvas id="mainCanvas" width="800" height="600"></canvas><br />
 
-
+<!-- <p class="mt-5 mb-3 text-muted">&copy; ELSA 2020</p> -->
 </body>
 </html>
