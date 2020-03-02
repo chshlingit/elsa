@@ -368,7 +368,9 @@ else:
        	jaon_path = "/json_" + now_str + "_idx0" + str(i) +"/"
        	path = output2 + jaon_path +"*.vmd"
        	mmd_output = "/home/user/Documents/elsa/mmd-viewer-js/vmd/motion.vmd"
-       	os.system("cp %s %s" %(path, mmd_output))
+        mmd_output2="/home/user/Documents/elsa/ELSA/media/vmd/motion.vmd"
+        os.system("cp %s %s" %(path, mmd_output))
+        os.system("cp %s %s" %(path, mmd_output2))
 print(target_dir)
 print(idx_dir_path)
 
