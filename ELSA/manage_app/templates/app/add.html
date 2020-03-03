@@ -19,7 +19,7 @@
     
     <title>A.I.</title>
 </head>
-<body class="text-center">
+<body>
     <form class="form-signin" action="/manage_app/add/" enctype="multipart/form-data" method="post" id="upload">{% csrf_token %}
         <img class="mb-4" src="/static/ai_icon.png" alt="" width="320" height="320">
 
@@ -31,7 +31,13 @@
         </div>
         
         <button class="btn btn-lg btn-primary btn-block has-spinner" style="margin-top:20px" type="submit" id="send">送出</button>
-        <p class="mt-5 mb-3 text-muted">&copy; ELSA 2020</p>
+        <a href="#" onclick="javascript:location.href='manage_app/use'" >使用說明</input>
+        <a href="#" onclick="javascript:location.href='manage_app/plan'" >計畫說明</input>
+        <a href="#" onclick="javascript:location.href='manage_app/technology'" >應用技術</input>
+        <a href="#" onclick="javascript:location.href='manage_app/theory'" >背景理論</input>
+        <a href="#" onclick="javascript:location.href='manage_app/reference'" >reference</input>
+        <a href="#" onclick="javascript:location.href='manage_app/resume'" >開發者履歷</input>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; ELSA 2020</p>
         <h2>{{response}}</h2>
     </form>
 

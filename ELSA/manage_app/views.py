@@ -39,6 +39,18 @@ def detail(request):
 def feedback(request):
     return render(request, 'app/feedback.html', locals())
     #response.delete_cookie("cookie_key",path="/add",domain=name)
-    send_email.delay(user_name[-1], 'user') #收件人
-	
+    #send_email.delay(user_name[-1], 'user') #收件人
+
+def use(request):
+    return render(request, 'app/use.html', locals())
+def plan(request):
+    return render(request, 'app/plan.plan', locals())
+def technology(request):
+    return render(request, 'app/technology.html', locals())
+def theory(request):
+    return render(request, 'app/theory.html', locals())
+def reference(request):
+    return render(request, 'app/reference.html', locals())
+def resume(request):
+    return render(request, 'app/resume.html', locals()) 
 	

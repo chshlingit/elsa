@@ -10,15 +10,16 @@
 
     <link href="/static/signin.css" rel="stylesheet">
     
-    <title>ELSA</title>
+    <title>A.I.</title>
 </head>
 <body>
-    <form action="" method="post"> {% csrf_token %}
-        <h1>上傳成功</h1>
+    <form class="form-signin" action="" method="post"> {% csrf_token %}
+        <img class="mb-4" src="/static/ai_icon.png" alt="" width="320" height="320">
+        <h1 class="text-center">上傳成功</h1>
         <input class="btn btn-lg btn-primary btn-block" type ="button" onclick="history.back()" value="回到上一頁"></input>
         <input class="btn btn-lg btn-primary btn-block" type ="button" onclick="javascript:location.href='http://66f7826f.ngrok.io/'" value="MMD預覽"></input>
         <a class="btn btn-lg btn-primary btn-block" href="../../media/motion.vmd" download="motion.vmd">下載vmd</a>
-        <p class="mt-5 mb-3 text-muted">&copy; ELSA 2020</p>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; ELSA 2020</p>
     </form>
 
         <!-- Optional JavaScript -->
